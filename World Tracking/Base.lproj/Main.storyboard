@@ -26,7 +26,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="Omv-BN-dAJ"/>
-                                    <constraint firstAttribute="width" constant="80" id="cdg-XS-wGO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="cdg-XS-wGO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Add"/>
@@ -34,13 +34,28 @@
                                     <action selector="addButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAa-Rp-0um"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="civ-Ay-CAg">
+                                <rect key="frame" x="275" y="567" width="80" height="80"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="uEy-i2-C7D"/>
+                                    <constraint firstAttribute="height" constant="80" id="yqb-kQ-fcU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G81-I7-xxe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vnd-d7-erl" secondAttribute="bottom" constant="20" id="A5o-z9-a1S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4H-gf-g3s" secondAttribute="trailing" id="Bwm-iL-Jss"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="civ-Ay-CAg" secondAttribute="bottom" constant="20" id="JmA-0N-JWi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X4H-gf-g3s" secondAttribute="bottom" id="QYX-9B-Acs"/>
                             <constraint firstItem="X4H-gf-g3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qg6-NV-pCo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="civ-Ay-CAg" secondAttribute="trailing" constant="20" id="j6H-ad-4rF"/>
                             <constraint firstItem="X4H-gf-g3s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mPR-Mm-Yv9"/>
                             <constraint firstItem="vnd-d7-erl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uQ8-0z-0u8"/>
                         </constraints>
@@ -52,6 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="93.103448275862078"/>
         </scene>
     </scenes>
 </document>

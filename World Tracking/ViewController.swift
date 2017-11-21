@@ -34,5 +34,22 @@ class ViewController: UIViewController {
         sceneView.scene.rootNode.addChildNode(node)
     }
     
+    @IBAction func resetButtonTapped(_ sender: UIButton) {
+        restartSession()
+    }
+    
+    // reset function
+    func restartSession() {
+        // first the session should be paused
+        sceneView.session.pause()
+        // second "node" should be deleted for parent node
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            node.removeFromParentNode()
+        }
+        // third session should be running again with resetTracking option and removing existing anchors
+        sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+        
+    }
+    
 }
 
