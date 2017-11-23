@@ -20,15 +20,20 @@ class ViewController: UIViewController {
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
         
         sceneView.session.run(configuration)
+        
+        // adding source of light to scene
+        sceneView.autoenablesDefaultLighting = true
 
     }
 
     @IBAction func addButtonTapped(_ sender: UIButton) {
         // creating node and giving it shape and color and position
         let node = SCNNode()
-        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0)
+        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
         node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
-        node.position = SCNVector3(0, 0, 0)
+        // effect of light that being reflected from the surface of the node object
+        node.geometry?.firstMaterial?.specular.contents = UIColor.orange
+        node.position = SCNVector3(0, 0, -0.5)
         // scene - what is visible on screen
         // rootNode - by default set to origin of the view, has no shape, color, etc
         sceneView.scene.rootNode.addChildNode(node)
