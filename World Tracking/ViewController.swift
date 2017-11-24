@@ -29,7 +29,18 @@ class ViewController: UIViewController {
     @IBAction func addButtonTapped(_ sender: UIButton) {
         // creating node and giving it shape and color and position
         let node = SCNNode()
-        node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
+        //node.geometry = SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0.03)
+        
+        // custom shape using bezier path
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 0, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: 0.1))
+        path.addLine(to: CGPoint(x: 0.1, y: 0.2))
+        path.addLine(to: CGPoint(x: 0.2, y: 0.1))
+        path.addLine(to: CGPoint(x: 0.2, y: 0))
+        let shape = SCNShape(path: path, extrusionDepth: 0.1)
+        node.geometry = shape
+        
         node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         // effect of light that being reflected from the surface of the node object
         node.geometry?.firstMaterial?.specular.contents = UIColor.orange
