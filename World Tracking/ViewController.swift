@@ -31,18 +31,24 @@ class ViewController: UIViewController {
         let boxNode = SCNNode(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0))
         let piramindNode = SCNNode(geometry: SCNPyramid(width: 0.1, height: 0.05, length: 0.1))
         let planeNode = SCNNode(geometry: SCNPlane(width: 0.04, height: 0.07))
+        let planeWindowNode = SCNNode(geometry: SCNPlane(width: 0.04, height: 0.04))
         
         boxNode.geometry?.firstMaterial?.diffuse.contents = UIColor.darkGray
         piramindNode.geometry?.firstMaterial?.diffuse.contents = UIColor.lightGray
         planeNode.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
+        planeWindowNode.geometry?.firstMaterial?.diffuse.contents = UIColor.gray
         
         sceneView.scene.rootNode.addChildNode(boxNode)
         boxNode.addChildNode(piramindNode)
         boxNode.addChildNode(planeNode)
+        boxNode.addChildNode(planeWindowNode)
         
         boxNode.position = SCNVector3(0, 0, 0)
         piramindNode.position = SCNVector3(0, 0.05, 0)
         planeNode.position = SCNVector3(0, 0, 0.051)
+        planeWindowNode.position = SCNVector3(-0.051, 0, 0)
+        //adding rotation to a single element
+        planeWindowNode.eulerAngles = SCNVector3(0, Float(270.degreesToRadians), 0)
 
     }
     
@@ -63,5 +69,11 @@ class ViewController: UIViewController {
         
     }
     
+}
+
+extension Int {
+    var degreesToRadians: Double {
+        return Double(self) * .pi / 180
+    }
 }
 
