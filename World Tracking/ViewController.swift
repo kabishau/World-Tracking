@@ -33,11 +33,8 @@ class ViewController: UIViewController {
         node.geometry?.firstMaterial?.diffuse.contents = UIColor.blue
         // effect of light that being reflected from the surface of the node object
         node.geometry?.firstMaterial?.specular.contents = UIColor.orange
-        // creating x, y, z points for Vector3
-        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        let z = randomNumbers(firstNum: -0.3, secondNum: 0.3)
-        node.position = SCNVector3(x, y, z)
+        
+        node.position = SCNVector3(0, 0, -0.3)
         // scene - what is visible on screen
         // rootNode - by default set to origin of the view, has no shape, color, etc
         sceneView.scene.rootNode.addChildNode(node)
@@ -58,11 +55,6 @@ class ViewController: UIViewController {
         // third session should be running again with resetTracking option and removing existing anchors
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
         
-    }
-    
-    // func that generates randmon number between given min and max numbers
-    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
     }
     
 }
