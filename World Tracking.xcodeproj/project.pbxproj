@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22CC9E1A1FD21BFE001FCF43 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC9E191FD21BFE001FCF43 /* ItemCell.swift */; };
 		D400B05B1FC204AB00F9919F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400B05A1FC204AB00F9919F /* AppDelegate.swift */; };
 		D400B05D1FC204AB00F9919F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D400B05C1FC204AB00F9919F /* ViewController.swift */; };
 		D400B0601FC204AB00F9919F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400B05E1FC204AB00F9919F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22CC9E191FD21BFE001FCF43 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		D400B0571FC204AB00F9919F /* World Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D400B05A1FC204AB00F9919F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D400B05C1FC204AB00F9919F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				D400B05A1FC204AB00F9919F /* AppDelegate.swift */,
 				D400B05C1FC204AB00F9919F /* ViewController.swift */,
 				D43C7B4D1FD0FF4A00140863 /* IkeaViewController.swift */,
+				22CC9E191FD21BFE001FCF43 /* ItemCell.swift */,
 				D400B05E1FC204AB00F9919F /* Main.storyboard */,
 				D400B0611FC204AB00F9919F /* Assets.xcassets */,
 				D400B0631FC204AB00F9919F /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CC9E1A1FD21BFE001FCF43 /* ItemCell.swift in Sources */,
 				D43C7B4E1FD0FF4A00140863 /* IkeaViewController.swift in Sources */,
 				D400B05D1FC204AB00F9919F /* ViewController.swift in Sources */,
 				D400B05B1FC204AB00F9919F /* AppDelegate.swift in Sources */,
