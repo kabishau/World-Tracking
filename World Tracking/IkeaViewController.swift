@@ -24,8 +24,9 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
         sceneView.session.run(configuration)
         sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         
-        // setting the delegate object
+        // setting the delegate and data source objects
         itemsCollectionView.delegate = self
+        itemsCollectionView.dataSource = self
         
     }
     
