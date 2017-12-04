@@ -39,8 +39,16 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
         //sceneView.isUserInteractionEnabled = true
     }
     
-    @objc func tapped() {
-        print("Tapped the sceneView")
+    @objc func tapped(sender: UITapGestureRecognizer) {
+        let sceneView = sender.view as! ARSCNView
+        let tapLocation = sender.location(in: sceneView)
+        let hitTest = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
+        if !hitTest.isEmpty {
+            print("touched a horizontal surface")
+        } else {
+            print("no match")
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
