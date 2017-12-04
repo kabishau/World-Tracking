@@ -29,6 +29,18 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
         itemsCollectionView.delegate = self
         itemsCollectionView.dataSource = self
         
+        registerGestureRecognizers()
+        
+    }
+    
+    func registerGestureRecognizers() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        sceneView.addGestureRecognizer(tapGestureRecognizer)
+        //sceneView.isUserInteractionEnabled = true
+    }
+    
+    @objc func tapped() {
+        print("Tapped the sceneView")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
