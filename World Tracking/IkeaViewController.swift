@@ -21,6 +21,7 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
         sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         
