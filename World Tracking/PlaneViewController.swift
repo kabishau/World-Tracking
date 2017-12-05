@@ -30,17 +30,15 @@ class PlaneViewController: UIViewController, ARSCNViewDelegate {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
         let lavaNode = createLava(planeAnchor: planeAnchor)
         node.addChildNode(lavaNode)
-        print("new flat surface is detected and new ARPlaneAnchor has been created")
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-        
-        print("updating floor's anchor")
+
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
-        print("second anchor has been removed")
+        
     }
     
 }
