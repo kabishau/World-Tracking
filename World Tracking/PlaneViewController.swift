@@ -14,6 +14,18 @@ class PlaneViewController: UIViewController, ARSCNViewDelegate {
         configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
         sceneView.delegate = self
+        
+        let lavaNode = createLava()
+        sceneView.scene.rootNode.addChildNode(lavaNode)
+        
+        
+    }
+    
+    func createLava() -> SCNNode {
+        let lavaNode = SCNNode(geometry: SCNPlane(width: 1, height: 1))
+        lavaNode.geometry?.firstMaterial?.diffuse.contents = #imageLiteral(resourceName: "Lava")
+        lavaNode.position = SCNVector3(0, 0, -1)
+        return lavaNode
     }
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
