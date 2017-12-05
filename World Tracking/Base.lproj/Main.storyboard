@@ -145,6 +145,36 @@
             </objects>
             <point key="canvasLocation" x="176.80000000000001" y="868.51574212893559"/>
         </scene>
+        <!--Plane View Controller-->
+        <scene sceneID="EeD-iF-gDe">
+            <objects>
+                <viewController id="ZU6-ac-UbW" customClass="PlaneViewController" customModule="World_Tracking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DDi-1e-cec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hM-QP-lQT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eGA-A1-M9n" firstAttribute="bottom" secondItem="7hM-QP-lQT" secondAttribute="bottom" id="Nwq-hh-xds"/>
+                            <constraint firstItem="7hM-QP-lQT" firstAttribute="top" secondItem="DDi-1e-cec" secondAttribute="top" id="dbw-9p-fz0"/>
+                            <constraint firstItem="7hM-QP-lQT" firstAttribute="leading" secondItem="eGA-A1-M9n" secondAttribute="leading" id="xC7-Rv-pBe"/>
+                            <constraint firstItem="eGA-A1-M9n" firstAttribute="trailing" secondItem="7hM-QP-lQT" secondAttribute="trailing" id="yNH-tm-S9W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eGA-A1-M9n"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="hOb-TO-PiR"/>
+                    <connections>
+                        <outlet property="sceneView" destination="7hM-QP-lQT" id="P2c-Kw-oQx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xpj-e9-XbN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="867"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="t5M-47-Ifb">
             <objects>
@@ -158,6 +188,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9bZ-vq-AMv"/>
                         <segue destination="MTq-bo-FVR" kind="relationship" relationship="viewControllers" id="PpN-LU-unL"/>
+                        <segue destination="ZU6-ac-UbW" kind="relationship" relationship="viewControllers" id="bJP-dF-bAK"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fE9-W3-tvk" userLabel="First Responder" sceneMemberID="firstResponder"/>

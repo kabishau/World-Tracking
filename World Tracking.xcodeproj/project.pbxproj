@@ -18,6 +18,7 @@
 		D4F54B651FD3C706005C9577 /* cup.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B611FD3C706005C9577 /* cup.scn */; };
 		D4F54B661FD3C706005C9577 /* boxing.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B621FD3C706005C9577 /* boxing.scn */; };
 		D4F54B671FD3C706005C9577 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B631FD3C706005C9577 /* table.scn */; };
+		D4F694811FD6365D005A0D05 /* PlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F694801FD6365D005A0D05 /* PlaneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D4F54B611FD3C706005C9577 /* cup.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = cup.scn; sourceTree = "<group>"; };
 		D4F54B621FD3C706005C9577 /* boxing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boxing.scn; sourceTree = "<group>"; };
 		D4F54B631FD3C706005C9577 /* table.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = table.scn; sourceTree = "<group>"; };
+		D4F694801FD6365D005A0D05 /* PlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				D400B05C1FC204AB00F9919F /* ViewController.swift */,
 				D43C7B4D1FD0FF4A00140863 /* IkeaViewController.swift */,
 				22CC9E191FD21BFE001FCF43 /* ItemCell.swift */,
+				D4F694801FD6365D005A0D05 /* PlaneViewController.swift */,
 				D400B05E1FC204AB00F9919F /* Main.storyboard */,
 				D400B0611FC204AB00F9919F /* Assets.xcassets */,
 				D400B0631FC204AB00F9919F /* LaunchScreen.storyboard */,
@@ -170,6 +173,7 @@
 				D43C7B4E1FD0FF4A00140863 /* IkeaViewController.swift in Sources */,
 				D400B05D1FC204AB00F9919F /* ViewController.swift in Sources */,
 				D400B05B1FC204AB00F9919F /* AppDelegate.swift in Sources */,
+				D4F694811FD6365D005A0D05 /* PlaneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
