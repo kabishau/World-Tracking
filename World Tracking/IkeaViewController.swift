@@ -9,7 +9,7 @@
 import UIKit
 import ARKit
 
-class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class IkeaViewController: UIViewController {
     
     let itemsArray: [String] = ["cup", "vase", "boxing", "table"]
 
@@ -21,13 +21,14 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
         configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
-        sceneView.debugOptions = [ARSCNDebugOptions.showWorldOrigin, ARSCNDebugOptions.showFeaturePoints]
+        
         
         // setting the delegate and data source objects
-        itemsCollectionView.delegate = self
-        itemsCollectionView.dataSource = self
+        //itemsCollectionView.delegate = self
+        //itemsCollectionView.dataSource = self
         
         registerGestureRecognizers()
         
@@ -40,17 +41,19 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     
     @objc func tapped(sender: UITapGestureRecognizer) {
-        let sceneView = sender.view as! ARSCNView
-        let tapLocation = sender.location(in: sceneView)
-        let hitTest = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-        if !hitTest.isEmpty {
-            print("touched a horizontal surface")
-        } else {
-            print("no match")
-        }
+        print("tapped the sceneView")
+//        let sceneView = sender.view as! ARSCNView
+//        let tapLocation = sender.location(in: sceneView)
+//        let hitTest = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
+//        if !hitTest.isEmpty {
+//            print("touched a horizontal surface")
+//        } else {
+//            print("no match")
+//        }
         
     }
     
+    /*
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemsArray.count
     }
@@ -73,5 +76,5 @@ class IkeaViewController: UIViewController, UICollectionViewDataSource, UICollec
         
     }
     
-    
+    */
 }

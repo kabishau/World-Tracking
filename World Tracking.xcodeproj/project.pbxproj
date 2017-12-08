@@ -14,10 +14,7 @@
 		D400B0621FC204AB00F9919F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D400B0611FC204AB00F9919F /* Assets.xcassets */; };
 		D400B0651FC204AB00F9919F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D400B0631FC204AB00F9919F /* LaunchScreen.storyboard */; };
 		D43C7B4E1FD0FF4A00140863 /* IkeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43C7B4D1FD0FF4A00140863 /* IkeaViewController.swift */; };
-		D4F54B641FD3C706005C9577 /* vase.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B601FD3C706005C9577 /* vase.scn */; };
-		D4F54B651FD3C706005C9577 /* cup.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B611FD3C706005C9577 /* cup.scn */; };
-		D4F54B661FD3C706005C9577 /* boxing.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B621FD3C706005C9577 /* boxing.scn */; };
-		D4F54B671FD3C706005C9577 /* table.scn in Resources */ = {isa = PBXBuildFile; fileRef = D4F54B631FD3C706005C9577 /* table.scn */; };
+		D4A5836F1FDA561E00D941A8 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A5836E1FDA561E00D941A8 /* Models.scnassets */; };
 		D4F694811FD6365D005A0D05 /* PlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F694801FD6365D005A0D05 /* PlaneViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +28,7 @@
 		D400B0641FC204AB00F9919F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D400B0661FC204AB00F9919F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D43C7B4D1FD0FF4A00140863 /* IkeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IkeaViewController.swift; sourceTree = "<group>"; };
-		D4F54B601FD3C706005C9577 /* vase.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = vase.scn; sourceTree = "<group>"; };
-		D4F54B611FD3C706005C9577 /* cup.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = cup.scn; sourceTree = "<group>"; };
-		D4F54B621FD3C706005C9577 /* boxing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = boxing.scn; sourceTree = "<group>"; };
-		D4F54B631FD3C706005C9577 /* table.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = table.scn; sourceTree = "<group>"; };
+		D4A5836E1FDA561E00D941A8 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 		D4F694801FD6365D005A0D05 /* PlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,7 +62,7 @@
 		D400B0591FC204AB00F9919F /* World Tracking */ = {
 			isa = PBXGroup;
 			children = (
-				D4F54B5F1FD3C706005C9577 /* Assets */,
+				D4A5836E1FDA561E00D941A8 /* Models.scnassets */,
 				D400B05A1FC204AB00F9919F /* AppDelegate.swift */,
 				D400B05C1FC204AB00F9919F /* ViewController.swift */,
 				D43C7B4D1FD0FF4A00140863 /* IkeaViewController.swift */,
@@ -80,17 +74,6 @@
 				D400B0661FC204AB00F9919F /* Info.plist */,
 			);
 			path = "World Tracking";
-			sourceTree = "<group>";
-		};
-		D4F54B5F1FD3C706005C9577 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				D4F54B601FD3C706005C9577 /* vase.scn */,
-				D4F54B611FD3C706005C9577 /* cup.scn */,
-				D4F54B621FD3C706005C9577 /* boxing.scn */,
-				D4F54B631FD3C706005C9577 /* table.scn */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,10 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D400B0651FC204AB00F9919F /* LaunchScreen.storyboard in Resources */,
-				D4F54B641FD3C706005C9577 /* vase.scn in Resources */,
-				D4F54B651FD3C706005C9577 /* cup.scn in Resources */,
-				D4F54B661FD3C706005C9577 /* boxing.scn in Resources */,
-				D4F54B671FD3C706005C9577 /* table.scn in Resources */,
+				D4A5836F1FDA561E00D941A8 /* Models.scnassets in Resources */,
 				D400B0621FC204AB00F9919F /* Assets.xcassets in Resources */,
 				D400B0601FC204AB00F9919F /* Main.storyboard in Resources */,
 			);
